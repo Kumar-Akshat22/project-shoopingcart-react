@@ -22,7 +22,7 @@ function Product({product}) {
     }
 
   return (
-    <div className='flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in shadow-[0_3px_10px_rgb(0,0,0,0.2)] gap-3 p-4 mt-10 ml-5 rounded-xl'>
+    <div className='flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in shadow-[0_3px_10px_rgb(0,0,0,0.2)] gap-3 p-4 mt-10 ml-5 rounded-xl hover:shadow-[0px_0px_95px_53px_#00000024]'>
         <div>
             <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1'>{product.title}</p>
         </div>
