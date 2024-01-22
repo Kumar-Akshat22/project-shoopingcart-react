@@ -41,7 +41,7 @@ function Product({product}) {
             </div>
 
             {
-                cart.some((p) => p.id === product.id) ? (<button onClick={removeFromCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[8px]p-1 px-3 uppercase hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Remove Item</button>) : (<button onClick={addToCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[8px]p-1 px-3 uppercase  hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Add to Cart</button>)
+                cart.some((p) => p.id === product.id) ? (<button onClick={removeFromCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Remove Item</button>) : (<button onClick={addToCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase  hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Add to Cart</button>)
             }
         </div>
     </div>
