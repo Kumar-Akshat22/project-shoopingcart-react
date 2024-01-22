@@ -12,7 +12,7 @@ function NavBar() {
 
                 <div>
 
-                    <img src={logo}></img>
+                    <img src={logo} className='h-14'></img>
 
                 </div>
             </NavLink>
