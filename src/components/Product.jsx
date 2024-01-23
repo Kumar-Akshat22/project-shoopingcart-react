@@ -22,7 +22,7 @@ function Product({product}) {
     }
 
   return (
-    <div className='flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in shadow-[0_3px_10px_rgb(0,0,0,0.2)] gap-3 p-4 mt-10 ml-5 rounded-xl hover:shadow-[0px_0px_95px_53px_#00000024]'>
+    <div className='flex flex-col items-center justify-between sm:hover:scale-110 transition duration-300 ease-in shadow-[0_3px_10px_rgb(0,0,0,0.2)] gap-3 p-4 mt-10 ml-0 sm:ml-5 rounded-xl sm:hover:shadow-[0px_0px_95px_53px_#00000024]'>
         <div>
             <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1'>{product.title}</p>
         </div>
@@ -34,14 +34,14 @@ function Product({product}) {
             <img src={product.image} className='h-full w-full'></img>
         </div>
 
-        <div className='w-full flex justify-between gap-11 mt-5'>
+        <div className='w-full flex justify-between items-center gap-11 mt-5'>
 
             <div>
                 <p className='text-green-600 font-bold'>₹{product.price}</p>
             </div>
 
             {
-                cart.some((p) => p.id === product.id) ? (<button onClick={removeFromCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Remove Item</button>) : (<button onClick={addToCart} className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase  hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Add to Cart</button>)
+                cart.some((p) => p.id === product.id) ? (<button onClick={removeFromCart} className='w-[50%] text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Remove Item</button>) : (<button onClick={addToCart} className='w-[50%] text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase  hover:bg-gray-700 hover:text-white transition duration-300 ease-in'>Add to Cart</button>)
             }
         </div>
     </div>
